@@ -39,6 +39,19 @@ rev = function (word) {
     return word.join('');
 }
 
+rev_arr = function (a) {
+    let tmp;
+    a = a.split(' ');
+    for (let j = a.length; j > 0; j --){
+        for (let i = 1; i < j; i++) {
+            tmp = a[i-1];
+            a[i-1] = a[i];
+            a[i] = tmp;
+        }
+    }
+    return a.join(' ');
+}
+
 in_place_rev = function (s) {
 
     s = s.split(' ');
@@ -50,4 +63,4 @@ in_place_rev = function (s) {
 
 let s = "the sky is blue";
 console.log(in_place_rev(s));
-
+console.log(rev_arr(s))
