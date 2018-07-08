@@ -7,7 +7,11 @@ separated by a single space.
 
 For example,
 Given s = "the sky is blue",
-return "blue is sky the".
+return "eht yks si eulb"
+
+second example:
+Given s = "the sky is blue",
+return "blue is sky the"
 
 Could you do it in-place without allocating extra space?
 **/
